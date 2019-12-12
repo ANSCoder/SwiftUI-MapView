@@ -9,8 +9,11 @@
 import Foundation
 import MapKit
 
-
+/*
+  Coordinator for using UIKit inside SwiftUI.
+ */
 class MapViewCoordinator: NSObject, MKMapViewDelegate {
+    
       var mapViewController: MapView
         
       init(_ control: MapView) {

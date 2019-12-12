@@ -31,24 +31,6 @@ struct MapView: UIViewRepresentable {
         view.delegate = context.coordinator
         view.addAnnotations(landmarks)
     }
-    
-    
-    class MapView: NSObject, MKMapViewDelegate {
-        
-        var mapViewController: MapView
-        
-        init(_ control: MapView) {
-            self.mapViewController = control
-        }
-        
-        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
-            let annotationView = MKAnnotationView(annotation: annotation,
-                                                  reuseIdentifier: "customView")
-            annotationView.canShowCallout = true
-            annotationView.image = UIImage(named: "locationPin")
-            return annotationView
-        }
-    }
 }
 
 struct MapView_Previews: PreviewProvider {
