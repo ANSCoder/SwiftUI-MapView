@@ -65,4 +65,4 @@ class MapViewCoordinator: NSObject, MKMapViewDelegate {
 
 ```
 
-## Checkout my complet blog [here](https://medium.com/flawless-app-stories/mapkit-in-swiftui-c0cc2b07c28a).
+## Checkout my complete blog [here](https://medium.com/flawless-app-stories/mapkit-in-swiftui-c0cc2b07c28a).
